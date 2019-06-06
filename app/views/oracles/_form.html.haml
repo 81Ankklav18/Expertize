@@ -1,0 +1,17 @@
+= form_with(model: oracle, local: true) do |form|
+  - if oracle.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(oracle.errors.count, "error")
+        prohibited this oracle from being saved:
+      %ul
+        - oracle.errors.full_messages.each do |message|
+          %li= message
+  .field
+    = form.label :name
+    = form.text_field :name
+  .field
+    = form.label :email
+    = form.text_field :email
+  .actions
+    = form.submit

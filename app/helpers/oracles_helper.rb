@@ -1,0 +1,2 @@
+module OraclesHelper
+end

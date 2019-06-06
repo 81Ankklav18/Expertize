@@ -1,0 +1,10 @@
+%p#notice= notice
+%p
+  %strong Name:
+  = @oracle.name
+%p
+  %strong Email:
+  = @oracle.email
+= link_to 'Edit', edit_oracle_path(@oracle)
+|
+= link_to 'Back', oracles_path
