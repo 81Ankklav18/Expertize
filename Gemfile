@@ -79,3 +79,8 @@ gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
 gem 'will_paginate'
 gem 'kaminari'
 gem 'turbolinks'
+
+group :production do
+  # For Heroku deployment
+  gem 'rails_12factor'
+end
